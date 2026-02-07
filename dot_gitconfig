@@ -1,0 +1,16 @@
+[init]
+  defaultBranch = main
+
+[user]
+  name = daiki
+  email = k1tikurisu@gmail.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH6Oisd65vbNZiZY/2zZU61lRxHBh8zETtMYZjWxwvef
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
