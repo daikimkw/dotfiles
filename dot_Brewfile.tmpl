@@ -11,11 +11,12 @@ brew "libyaml"
 brew "tmux"
 {{ end -}}
 
+cask "1password-cli"
+cask "claude-code"
+
 {{ if eq .chezmoi.os "darwin" -}}
 cask "1password"
-cask "1password-cli"
 cask "asana"
-cask "claude-code"
 cask "cursor"
 cask "displaylink"
 cask "figma"
@@ -26,7 +27,9 @@ cask "nani"
 cask "orbstack"
 cask "visual-studio-code"
 cask "zoom"
+{{ end -}}
 
+{{ if eq .chezmoi.os "darwin" -}}
 vscode "3w36zj6.textlint"
 vscode "alefragnani.bookmarks"
 vscode "bierner.markdown-mermaid"
