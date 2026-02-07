@@ -1,5 +1,5 @@
 #!/bin/bash
 
 if ! command -v brew &>/dev/null; then
-  git clone --depth=1 https://github.com/Homebrew/brew "$HOME/.homebrew"
+  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
