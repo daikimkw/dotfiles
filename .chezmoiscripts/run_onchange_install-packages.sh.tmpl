@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# Brewfile hash: {{ include "dot_Brewfile" | sha256sum }}
+# Brewfile hash: {{ include "dot_Brewfile.tmpl" | sha256sum }}
 
 brew bundle --file="$HOME/.Brewfile"

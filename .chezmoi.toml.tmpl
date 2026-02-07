@@ -1,0 +1,4 @@
+{{- $isDevcontainer := or (env "REMOTE_CONTAINERS") (env "CODESPACES") | not | not -}}
+
+[data]
+  isDevcontainer = {{ $isDevcontainer }}
