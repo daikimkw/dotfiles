@@ -1,6 +1,9 @@
 # Path
 export PATH=$HOME/.homebrew/bin:$PATH
 
+# Environment variables
+export HOMEBREW_CACHE=$HOME/.homebrew/cache
+
 # History configuration
 HISTFILE=$HOME/.zsh_history
 HISTSIZE=1000000
