@@ -1,0 +1,11 @@
+[tools]
+node = "latest"
+pnpm = "latest"
+ruby = "3.4.6"
+
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
+experimental = true
+
+[env]
+HOMEBREW_CACHE = "{{env.HOME}}/.homebrew/cache"

@@ -1,0 +1,21 @@
+# Path
+export PATH=$HOME/.homebrew/bin:$PATH
+
+# History configuration
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=1000000
+SAVEHIST=1000000
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt share_history
+
+# Completion configuration
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+
+# Tool initialization
+eval "$(mise activate zsh)" # mise
+eval "$(starship init zsh)" # starship
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :

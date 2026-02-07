@@ -1,0 +1,6 @@
+README.md
+package.json
+pnpm-lock.yaml
+.secretlintrc.json
+.gitignore
+node_modules
