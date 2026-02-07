@@ -36,4 +36,4 @@ if [ -n "$used_pct" ]; then
 fi
 
 # Build status line (Starship-style: dir + git + model + context)
-printf "$(printf '\033[36m')%s$(printf '\033[0m')%s%s%s" "$dir_display" "$git_info" "$model_info" "$context_inf
+printf "$(printf '\033[36m')%s$(printf '\033[0m')%s%s%s" "$dir_display" "$git_info" "$model_info" "$context_info"
