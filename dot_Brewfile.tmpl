@@ -1,17 +1,17 @@
 brew "chezmoi"
 brew "gh"
 brew "jq"
-brew "tmux"
 brew "mise"
 brew "starship"
 brew "tree"
 
-{{ if not .isDevcontainer -}}
+{{ if eq .chezmoi.os "darwin" -}}
 brew "openssl@3"
 brew "libyaml"
+brew "tmux"
 {{ end -}}
 
-{{ if not .isDevcontainer -}}
+{{ if eq .chezmoi.os "darwin" -}}
 cask "1password"
 cask "1password-cli"
 cask "asana"
