@@ -7,4 +7,5 @@ node_modules
 
 {{ if ne .chezmoi.os "darwin" }}
 Library/Application Support/Code
+Library/Application Support/Cursor
 {{ end }}

@@ -1,11 +1,8 @@
 {
-  /* files */
   "files.autoSave": "afterDelay",
   "files.autoGuessEncoding": false,
   "files.encoding": "utf8",
   "files.eol": "\n",
-
-  /* editor */
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.renderWhitespace": "all",
@@ -17,35 +14,22 @@
   "editor.formatOnSave": true,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
-
-  /* eslint */
   "eslint.format.enable": true,
-
-  /* language */
   "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
+      "editor.defaultFormatter": "Prisma.prisma"
   },
-
-  /* workbench */
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "GitHub Dark",
-
-  /* cSpell */
-  "cSpell.languageSettings": [
-
-
-
-  ],
-
+  "cSpell.languageSettings": [],
   "editor.accessibilitySupport": "off",
   "terminal.external.osxExec": "Warp.app",
   "terminal.integrated.allowChords": false,
   "git.autofetch": true,
+  "typescript.tsserver.log": "off",
   "prisma.showPrismaDataPlatformNotification": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "playwright.reuseBrowser": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-
   "vim.easymotion": true,
   "vim.sneak": true,
   "vim.incsearch": true,
@@ -90,6 +74,7 @@
     "Nuxt",
     "Plasmo",
     "plasmohq",
+    "shadcn",
     "sonner",
     "stylelint",
     "svgr",
@@ -102,7 +87,11 @@
     "markdown": true,
     "plaintext": true
   },
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1"
+  "cursor.cpp.disabledLanguages": [
+    "plaintext"
+  ],
+  "window.commandCenter": true,
+  "workbench.settings.applyToAllProfiles": [
+      
+  ]
 }
