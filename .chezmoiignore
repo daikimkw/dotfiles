@@ -4,3 +4,7 @@ pnpm-lock.yaml
 .secretlintrc.json
 .gitignore
 node_modules
+
+{{ if ne .chezmoi.os "darwin" }}
+Library/Application Support/Code
+{{ end }}

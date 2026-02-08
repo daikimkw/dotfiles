@@ -1,0 +1,108 @@
+{
+  /* files */
+  "files.autoSave": "afterDelay",
+  "files.autoGuessEncoding": false,
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+
+  /* editor */
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.renderWhitespace": "all",
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+
+  /* eslint */
+  "eslint.format.enable": true,
+
+  /* language */
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+
+  /* workbench */
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "GitHub Dark",
+
+  /* cSpell */
+  "cSpell.languageSettings": [
+
+
+
+  ],
+
+  "editor.accessibilitySupport": "off",
+  "terminal.external.osxExec": "Warp.app",
+  "terminal.integrated.allowChords": false,
+  "git.autofetch": true,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "playwright.reuseBrowser": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "vim.surround": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "workbench.editor.enablePreview": false,
+  "git.ignoreRebaseWarning": true,
+  "git.enableSmartCommit": true,
+  "cSpell.userWords": [
+    "biomejs",
+    "bozuman",
+    "clsx",
+    "Cmdk",
+    "confbox",
+    "espree",
+    "googleusercontent",
+    "kintone",
+    "Nuxt",
+    "Plasmo",
+    "plasmohq",
+    "sonner",
+    "stylelint",
+    "svgr",
+    "Tekitone",
+    "tikurisu",
+    "Vite"
+  ],
+  "editor.minimap.enabled": false,
+  "github.copilot.enable": {
+    "markdown": true,
+    "plaintext": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1"
+}
