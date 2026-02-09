@@ -1,3 +1,8 @@
+# Path
+{{- if ne .chezmoi.hostname "daikimkw-pc-1" }}
+export PATH="$HOME/homebrew/bin:$PATH"
+{{- end }}
+
 # Environment variables
 
 # History configuration
@@ -15,9 +20,9 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 
 # Tool initialization
-{{- if eq .chezmoi.os "darwin" }}
+{{- if and (eq .chezmoi.hostname "daikimkw-pc-1") (eq .chezmoi.os "darwin") }}
 eval "$(/opt/homebrew/bin/brew shellenv)"
-{{- else if eq .chezmoi.os "linux" }}
+{{- else if and (eq .chezmoi.hostname "daikimkw-pc-1") (eq .chezmoi.os "linux") }}
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 {{- end }}
 eval "$(mise activate zsh)" # mise

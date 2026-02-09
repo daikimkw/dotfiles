@@ -5,7 +5,7 @@ brew "mise"
 brew "starship"
 brew "tree"
 
-{{ if eq .chezmoi.os "darwin" -}}
+{{ if and (eq .chezmoi.os "darwin") (eq .chezmoi.hostname "daikimkw-pc-1") -}}
 brew "openssl@3"
 brew "libyaml"
 brew "tmux"
@@ -14,7 +14,7 @@ brew "tmux"
 cask "1password-cli"
 cask "claude-code"
 
-{{ if eq .chezmoi.os "darwin" -}}
+{{ if and (eq .chezmoi.os "darwin") (eq .chezmoi.hostname "daikimkw-pc-1") -}}
 cask "1password"
 cask "asana"
 cask "cursor"
