@@ -10,5 +10,28 @@
     "frontend-design@claude-plugins-official": true
   },
   "alwaysThinkingEnabled": true,
-  "language": "日本語"
+  "language": "日本語",
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Bash(pnpm run:*)",
+      "Bash(grep:*)",
+      "mcp__figma-dev-mode-mcp-server__get_screenshot",
+      "mcp__chrome-devtools__new_page",
+      "mcp__chrome-devtools__fill_form",
+      "mcp__chrome-devtools__click",
+      "mcp__chrome-devtools__list_console_messages",
+      "mcp__chrome-devtools__list_network_requests",
+      "mcp__chrome-devtools__select_page",
+      "mcp__chrome-devtools__take_screenshot",
+      "mcp__chrome-devtools__evaluate_script",
+      "mcp__chrome-devtools__navigate_page",
+      "mcp__chrome-devtools__take_snapshot",
+      "mcp__chrome-devtools__get_network_request",
+      "mcp__chrome-devtools__fill",
+      "mcp__chrome-devtools__wait_for"
+    ],
+    "deny": [],
+    "ask": []
+  }
 }
