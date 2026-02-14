@@ -27,7 +27,7 @@ description: '実装作業の開始時に、作業計画（plan.md）とプロ�
 
 Plan Modeでは：
 - コードベースの探索と調査のみを行う
-- plan.md と prompt.md への書き込みは自動承認される（PreToolUse hookで設定済み）
+- plan.md と prompt.md への書き込みは自動承認される
 - 実際のコード変更は行わない
 
 計画が完了したら `ExitPlanMode` でユーザー承認を得て、実装フェーズに移行します。

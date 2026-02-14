@@ -17,6 +17,10 @@
     "allow": [
       "Bash(pnpm run:*)",
       "Bash(grep:*)",
+      "Write(**/plan.md)",
+      "Write(**/prompt.md)",
+      "Edit(**/plan.md)",
+      "Edit(**/prompt.md)",
       "mcp__figma-dev-mode-mcp-server__get_screenshot",
       "mcp__chrome-devtools__new_page",
       "mcp__chrome-devtools__fill_form",
@@ -34,18 +38,5 @@
     ],
     "deny": [],
     "ask": []
-  },
-  "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Edit|Write",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "~/.claude/skills/start-impl/scripts/auto-approve-plan-files.sh"
-          }
-        ]
-      }
-    ]
   }
 }
