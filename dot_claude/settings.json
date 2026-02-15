@@ -10,6 +10,30 @@
     "code-simplifier@claude-plugins-official": true,
     "frontend-design@claude-plugins-official": true
   },
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"cwd\": \"'\"$(pwd)\"'\", \"notification_type\": \"stop\"}' | ~/.claude/notify.sh"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/notify.sh"
+          }
+        ]
+      }
+    ]
+  },
   "alwaysThinkingEnabled": true,
   "language": "日本語",
   "permissions": {
