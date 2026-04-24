@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# {{ if eq .chezmoi.os "darwin" -}}
+set -eu
+
+# ウィンドウをどこからでもドラッグできるようにする
+defaults write -g NSWindowShouldDragOnGesture -bool true
+
+# VSCode / Cursor でキー長押し時のアクセント入力ポップアップを無効化しキーリピートを有効化
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.todesktop.230313mzl4w4u92 ApplePressAndHoldEnabled -bool false
+# {{ end }}
