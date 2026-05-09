@@ -1,43 +1,6 @@
 {
   "includeCoAuthoredBy": false,
-  "model": "claude-opus-4-7",
-  "effortLevel": "high",
-  "statusLine": {
-    "type": "command",
-    "command": "bash ~/.claude/statusline.sh"
-  },
-  "enabledPlugins": {
-    "code-simplifier@claude-plugins-official": true,
-    "frontend-design@claude-plugins-official": true
-  },
-  "hooks": {
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "echo '{\"cwd\": \"'\"$(pwd)\"'\", \"notification_type\": \"stop\"}' | ~/.claude/notify.sh"
-          }
-        ]
-      }
-    ],
-    "Notification": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "~/.claude/notify.sh"
-          }
-        ]
-      }
-    ]
-  },
-  "alwaysThinkingEnabled": true,
-  "language": "日本語",
   "permissions": {
-    "defaultMode": "acceptEdits",
     "allow": [
       "Bash(mkdir *)",
       "Bash(touch *)",
@@ -108,6 +71,45 @@
       "Bash(wget *)",
       "Bash(curl *)",
       "Bash(git merge *)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "model": "claude-opus-4-7",
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"cwd\": \"'\"$(pwd)\"'\", \"notification_type\": \"stop\"}' | ~/.claude/notify.sh"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/notify.sh"
+          }
+        ]
+      }
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "code-simplifier@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true
+  },
+  "language": "日本語",
+  "alwaysThinkingEnabled": true,
+  "effortLevel": "xhigh",
+  "remoteControlAtStartup": true,
+  "skipDangerousModePermissionPrompt": true
 }
