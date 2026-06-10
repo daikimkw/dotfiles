@@ -7,9 +7,14 @@ brew "tree"
 brew "terminal-notifier"
 
 {{ if and (eq .chezmoi.os "darwin") (eq .chezmoi.hostname "daikimkw-pc-1") -}}
-brew "openssl@3"
+brew "awscli"
+brew "azure-cli"
 brew "libyaml"
+brew "openssl@3"
+brew "poppler"
+brew "postgresql@18"
 brew "tmux"
+brew "watchman"
 {{ end -}}
 
 cask "1password-cli"
@@ -17,15 +22,18 @@ cask "claude-code"
 
 {{ if and (eq .chezmoi.os "darwin") (eq .chezmoi.hostname "daikimkw-pc-1") -}}
 cask "1password"
+cask "android-studio"
 cask "figma"
 cask "intellij-idea"
 cask "logi-options+"
 cask "mattermost"
 cask "nani"
+cask "obsidian"
 cask "orbstack"
 cask "visual-studio-code"
 cask "postman"
 cask "pgadmin4"
+cask "zed"
 cask "zoom"
 {{ end -}}
 
