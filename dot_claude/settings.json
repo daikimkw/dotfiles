@@ -74,7 +74,7 @@
     ],
     "defaultMode": "auto"
   },
-  "model": "claude-opus-4-8",
+  "model": "claude-fable-5",
   "hooks": {
     "Stop": [
       {
@@ -110,9 +110,9 @@
   "language": "日本語",
   "alwaysThinkingEnabled": true,
   "effortLevel": "medium",
-  "remoteControlAtStartup": true,
   "skipDangerousModePermissionPrompt": true,
+  "remoteControlAtStartup": true,
+  "inputNeededNotifEnabled": true,
   "agentPushNotifEnabled": true,
-  "skipAutoPermissionPrompt": true,
-  "inputNeededNotifEnabled": true
+  "skipAutoPermissionPrompt": true
 }
