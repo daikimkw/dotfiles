@@ -27,6 +27,7 @@
   "hard_tabs": false,
   "tab_size": 2,
   "format_on_save": "on",
+  "formatter": "auto",
   "indent_guides": {
     "enabled": true
   },
@@ -37,7 +38,9 @@
     "show": true
   },
   "code_actions_on_format": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.biome": true,
+    "source.organizeImports.biome": true
   },
   "agent_servers": {
     "claude-acp": {
