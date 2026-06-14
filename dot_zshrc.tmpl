@@ -1,6 +1,10 @@
-# Path
-{{- if ne .chezmoi.hostname "daikimkw-pc-1" }}
-export PATH="$HOME/homebrew/bin:$PATH"
+# Homebrew
+{{- if and (eq .chezmoi.hostname "daikimkw-pc-1") (eq .chezmoi.os "darwin") }}
+eval "$(/opt/homebrew/bin/brew shellenv)"
+{{- else if and (eq .chezmoi.hostname "daikimkw-pc-1") (eq .chezmoi.os "linux") }}
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+{{- else }}
+eval "$($HOME/homebrew/bin/brew shellenv)"
 {{- end }}
 
 # Environment variables
@@ -14,17 +18,17 @@ setopt hist_ignore_space
 setopt share_history
 
 # Completion configuration
+fpath=($HOMEBREW_PREFIX/share/zsh-completions $fpath)
 autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 
 # Tool initialization
-{{- if and (eq .chezmoi.hostname "daikimkw-pc-1") (eq .chezmoi.os "darwin") }}
-eval "$(/opt/homebrew/bin/brew shellenv)"
-{{- else if and (eq .chezmoi.hostname "daikimkw-pc-1") (eq .chezmoi.os "linux") }}
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-{{- end }}
 eval "$(mise activate zsh)" # mise
 eval "$(starship init zsh)" # starship
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+
+# Zsh plugins
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
