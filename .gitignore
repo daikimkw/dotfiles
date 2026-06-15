@@ -1,1 +1,3 @@
 node_modules
+dot_ssh/private_config.local
+dot_ssh/*.pub
