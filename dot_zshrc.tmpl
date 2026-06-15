@@ -33,6 +33,74 @@ source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
+# GUI-style text selection with Shift+Arrow on the command line.
+# Shift+arrows extend a selection; plain arrows clear it; typing or
+# Backspace/Delete replaces/removes the selected text.
+
+# Extend (or start) the selection, then run the wrapped movement widget.
+function shift-select::select-and-move() {
+  (( REGION_ACTIVE )) || zle set-mark-command
+  REGION_ACTIVE=1
+  zle ".${WIDGET##*::}"
+}
+
+# Clear the selection, then run the wrapped movement widget.
+function shift-select::deselect-and-move() {
+  REGION_ACTIVE=0
+  zle ".${WIDGET##*::}"
+}
+
+# Remove the selection (if any) before deleting/inserting.
+function shift-select::backward-delete-char() {
+  if (( REGION_ACTIVE )); then zle kill-region; else zle .backward-delete-char; fi
+}
+function shift-select::delete-char() {
+  if (( REGION_ACTIVE )); then zle kill-region; else zle .delete-char; fi
+}
+function shift-select::self-insert() {
+  (( REGION_ACTIVE )) && zle kill-region
+  zle .self-insert
+}
+zle -N shift-select::backward-delete-char
+zle -N shift-select::delete-char
+zle -N self-insert shift-select::self-insert
+
+# Shift+Arrow / Shift+Home/End -> extend selection.
+for _ss in \
+  '^[[1;2C:forward-char'       '^[[1;2D:backward-char' \
+  '^[[1;2A:up-line-or-history' '^[[1;2B:down-line-or-history' \
+  '^[[1;6C:forward-word'       '^[[1;6D:backward-word' \
+  '^[[1;2H:beginning-of-line'  '^[[1;2F:end-of-line'; do
+  _ss_seq=${_ss%%:*}; _ss_w=shift-select::select::${_ss#*:}
+  eval "function $_ss_w { shift-select::select-and-move }"
+  zle -N "$_ss_w"; bindkey "$_ss_seq" "$_ss_w"
+done
+
+# Plain Arrow / Home/End -> clear selection then move.
+for _ss in \
+  '^[[C:forward-char'      '^[[D:backward-char' \
+  '^[OC:forward-char'      '^[OD:backward-char' \
+  '^[[H:beginning-of-line' '^[[F:end-of-line'; do
+  _ss_seq=${_ss%%:*}; _ss_w=shift-select::deselect::${_ss#*:}
+  eval "function $_ss_w { shift-select::deselect-and-move }"
+  zle -N "$_ss_w"; bindkey "$_ss_seq" "$_ss_w"
+done
+unset _ss _ss_seq _ss_w
+
+# Keep zsh-autosuggestions working: let it accept the suggestion when a plain
+# rightward move clears the selection (it wraps these widgets at first precmd).
+if [[ -n ${ZSH_AUTOSUGGEST_ACCEPT_WIDGETS+x} ]]; then
+  ZSH_AUTOSUGGEST_ACCEPT_WIDGETS+=(
+    'shift-select::deselect::forward-char'
+    'shift-select::deselect::end-of-line'
+  )
+fi
+
+# Backspace / Delete honor the active selection.
+bindkey '^?'    shift-select::backward-delete-char
+bindkey '^H'    shift-select::backward-delete-char
+bindkey '^[[3~' shift-select::delete-char
+
 # Ghostty launch configs: define a function per YAML (named after the file)
 if [[ -d ~/.config/ghostty/launch_configurations ]]; then
   for _gc in ~/.config/ghostty/launch_configurations/*.yaml(N); do
