@@ -32,3 +32,11 @@ source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 # Zsh plugins
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+# Ghostty launch configs: define a function per YAML (named after the file)
+if [[ -d ~/.config/ghostty/launch_configurations ]]; then
+  for _gc in ~/.config/ghostty/launch_configurations/*.yaml(N); do
+    functions[${_gc:t:r}]="~/.config/ghostty/ghostty-launch ${(q)_gc}"
+  done
+  unset _gc
+fi
