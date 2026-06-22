@@ -8,6 +8,8 @@ eval "$($HOME/homebrew/bin/brew shellenv)"
 {{- end }}
 
 # Environment variables
+# Versioned PostgreSQL is keg-only, so add its bin to PATH
+export PATH="$HOMEBREW_PREFIX/opt/postgresql@18/bin:$PATH"
 
 # History configuration
 HISTFILE=$HOME/.zsh_history
