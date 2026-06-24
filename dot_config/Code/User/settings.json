@@ -22,7 +22,7 @@
   "workbench.colorTheme": "GitHub Dark",
   "cSpell.languageSettings": [],
   "editor.accessibilitySupport": "off",
-  "terminal.external.osxExec": "Warp.app",
+  "terminal.external.osxExec": "Ghostty.app",
   "terminal.integrated.allowChords": false,
   "git.autofetch": true,
   "typescript.tsserver.log": "off",

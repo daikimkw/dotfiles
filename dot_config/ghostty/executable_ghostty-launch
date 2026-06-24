@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 # frozen_string_literal: true
 
-# Launch a Ghostty window from a Warp-style launch configuration YAML.
+# Launch a Ghostty window from a pane-tree launch configuration YAML.
 # Walks the pane tree and drives Ghostty's AppleScript automation API so
 # nested grids and per-pane cwd are reproduced faithfully.
 #
@@ -28,7 +28,7 @@ def expand(path)
 end
 
 def map_dir(direction)
-  # Warp semantics: vertical = stack top/bottom, horizontal = side by side.
+  # vertical = stack top/bottom, horizontal = side by side.
   direction == "horizontal" ? "right" : "down"
 end
 
