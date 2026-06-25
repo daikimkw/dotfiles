@@ -40,7 +40,6 @@
       "Bash(git rebase *)",
       "Read(id_rsa)",
       "Read(id_ed25519)",
-      "Read(**/*token*)",
       "Bash(rm -rf *)",
       "Bash(rm -rf /)",
       "Bash(rm -rf ~)",
@@ -54,7 +53,6 @@
       "Read(**/.env.local)",
       "Read(**/.env.development)",
       "Read(**/.env.production)",
-      "Read(**/*secret*)",
       "Write(.env)",
       "Write(.env.local)",
       "Write(.env.development)",
@@ -62,8 +60,7 @@
       "Write(**/.env)",
       "Write(**/.env.local)",
       "Write(**/.env.development)",
-      "Write(**/.env.production)",
-      "Write(**/*secret*)"
+      "Write(**/.env.production)"
     ],
     "ask": [
       "Bash(rm *)",
