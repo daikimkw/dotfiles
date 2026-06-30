@@ -40,7 +40,6 @@
       "Bash(git rebase *)",
       "Read(id_rsa)",
       "Read(id_ed25519)",
-      "Bash(rm -rf *)",
       "Bash(rm -rf /)",
       "Bash(rm -rf ~)",
       "Bash(rm -rf ~/*)",
@@ -63,6 +62,7 @@
       "Write(**/.env.production)"
     ],
     "ask": [
+      "Bash(rm -rf *)",
       "Bash(rm *)",
       "Bash(chmod *)",
       "Bash(wget *)",
