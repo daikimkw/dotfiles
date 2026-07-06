@@ -1,0 +1,17 @@
+# herdr — agent multiplexer config
+# Regenerate the full default with: herdr --default-config
+onboarding = false
+
+[keys]
+# Keep the tmux-style prefix to preserve muscle memory
+prefix = "ctrl+b"
+new_tab = "prefix+c"
+next_tab = "prefix+n"
+previous_tab = "prefix+p"
+
+[theme]
+name = "catppuccin"
+
+[ui]
+sidebar_width = 32
+confirm_close = true
