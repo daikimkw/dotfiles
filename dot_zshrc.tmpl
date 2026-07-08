@@ -130,3 +130,20 @@ if [[ -d ~/works ]]; then
   done
   unset _wd _base _name _work_dir_count
 fi
+
+# herdr: open a new workspace rooted at the current directory on launch.
+# herdr runs a persistent server that restores its saved session, so a bare
+# `herdr` reopens the session's original cwd ($HOME) no matter where it is
+# launched from; the `new_cwd` config only governs workspaces/tabs/panes created
+# afterward. When invoked with no arguments and the server is already running,
+# create a fresh workspace at $PWD and focus it before attaching. Subcommands and
+# flags pass straight through; on a cold start (no server yet) this one launch
+# falls back to the restored session.
+if (( ${+commands[herdr]} )); then
+  herdr() {
+    if (( $# == 0 )) && command herdr status server >/dev/null 2>&1; then
+      command herdr workspace create --cwd "$PWD" --focus >/dev/null 2>&1
+    fi
+    command herdr "$@"
+  }
+fi
