@@ -1,0 +1,33 @@
+#!/bin/sh
+# Open a fresh single-pane Ghostty window rooted at the given directory.
+# Mirrors ghostty-launch's stray-window handling so launching Ghostty cold
+# doesn't leave an extra empty window behind.
+#
+#   ghostty-cwd <dir>
+dir=${1:-$HOME}
+
+/usr/bin/osascript - "$dir" <<'APPLESCRIPT'
+on run argv
+  set targetDir to item 1 of argv
+  set wasRunning to application "Ghostty" is running
+  tell application "Ghostty"
+    if not wasRunning then launch
+    activate
+    set strayWindow to missing value
+    if not wasRunning then
+      delay 0.5
+      try
+        set strayWindow to front window
+      end try
+    end if
+    set cfg to new surface configuration
+    set initial working directory of cfg to targetDir
+    new window with configuration cfg
+    if strayWindow is not missing value then
+      try
+        close strayWindow
+      end try
+    end if
+  end tell
+end run
+APPLESCRIPT

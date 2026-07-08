@@ -109,10 +109,35 @@ bindkey '^?'    shift-select::backward-delete-char
 bindkey '^H'    shift-select::backward-delete-char
 bindkey '^[[3~' shift-select::delete-char
 
-# Ghostty launch configs: define a function per YAML (named after the file)
-if [[ -d ~/.config/ghostty/launch_configurations ]]; then
-  for _gc in ~/.config/ghostty/launch_configurations/*.yaml(N); do
-    functions[${_gc:t:r}]="~/.config/ghostty/ghostty-launch ${(q)_gc}"
+# herdr: a bare `herdr` opens a fresh 2-row x 3-column (6-pane) workspace
+# rooted at $PWD, then attaches. Subcommands (status, workspace, ...) and any
+# flags pass straight through. The grid is built over the socket API, so it is
+# skipped when the server is not up yet (the plain attach then starts it).
+herdr() {
+  if (( $# == 0 )) && command herdr workspace list >/dev/null 2>&1; then
+    ~/.config/herdr/herdr-6pane "$PWD"
+  fi
+  command herdr "$@"
+}
+
+# Ghostty project launchers: for each project under ~/works, define a function
+# that opens a fresh single-pane Ghostty window rooted at that directory. Prefer
+# the bare directory name; fall back to <org>-<project> when the bare name is
+# ambiguous (same leaf under two orgs) or would shadow a real command (e.g. the
+# zenn CLI).
+if [[ -d ~/works ]]; then
+  typeset -A _work_dir_count
+  for _wd in ~/works/*/*(N/); do
+    (( _work_dir_count[${_wd:t}]++ ))
   done
-  unset _gc
+  for _wd in ~/works/*/*(N/); do
+    _base=${_wd:t}
+    if (( _work_dir_count[$_base] > 1 )) || (( ${+commands[$_base]} )); then
+      _name=${_wd:h:t}-$_base
+    else
+      _name=$_base
+    fi
+    functions[$_name]="~/.config/ghostty/ghostty-cwd ${(q)_wd}"
+  done
+  unset _wd _base _name _work_dir_count
 fi
