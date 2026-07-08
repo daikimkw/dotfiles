@@ -2,6 +2,10 @@
 # Regenerate the full default with: herdr --default-config
 onboarding = false
 
+[terminal]
+# Open new tabs/panes/workspaces in the directory herdr was launched from.
+new_cwd = "current"
+
 [keys]
 # Keep the tmux-style prefix to preserve muscle memory
 prefix = "ctrl+b"
