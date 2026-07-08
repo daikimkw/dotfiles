@@ -109,11 +109,11 @@ bindkey '^?'    shift-select::backward-delete-char
 bindkey '^H'    shift-select::backward-delete-char
 bindkey '^[[3~' shift-select::delete-char
 
-# Ghostty project launchers: for each project under ~/works, define a function
-# that opens a fresh single-pane Ghostty window rooted at that directory. Prefer
-# the bare directory name; fall back to <org>-<project> when the bare name is
-# ambiguous (same leaf under two orgs) or would shadow a real command (e.g. the
-# zenn CLI).
+# herdr project launchers: for each project under ~/works, define a function
+# that opens a fresh single-pane tab in the current herdr workspace rooted at
+# that directory. Prefer the bare directory name; fall back to <org>-<project>
+# when the bare name is ambiguous (same leaf under two orgs) or would shadow a
+# real command (e.g. the zenn CLI).
 if [[ -d ~/works ]]; then
   typeset -A _work_dir_count
   for _wd in ~/works/*/*(N/); do
@@ -126,7 +126,7 @@ if [[ -d ~/works ]]; then
     else
       _name=$_base
     fi
-    functions[$_name]="~/.config/ghostty/ghostty-cwd ${(q)_wd}"
+    functions[$_name]="command herdr tab create --cwd ${(q)_wd} --focus >/dev/null 2>&1"
   done
   unset _wd _base _name _work_dir_count
 fi
