@@ -3,8 +3,8 @@
 onboarding = false
 
 [terminal]
-# Open new tabs/panes/workspaces in the directory herdr was launched from.
-new_cwd = "current"
+# Open new panes/tabs/workspaces in the focused pane's current directory.
+new_cwd = "follow"
 
 [keys]
 # Keep the tmux-style prefix to preserve muscle memory
