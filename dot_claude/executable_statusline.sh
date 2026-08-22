@@ -8,6 +8,7 @@ cwd=$(echo "$input" | jq -r '.workspace.current_dir')
 project_dir=$(echo "$input" | jq -r '.workspace.project_dir')
 model=$(echo "$input" | jq -r '.model.display_name')
 output_style=$(echo "$input" | jq -r '.output_style.name')
+session_id=$(echo "$input" | jq -r '.session_id // empty')
 
 # Format directory (show relative to home)
 dir_display="${cwd/#$HOME/~}"
@@ -35,5 +36,11 @@ if [ -n "$used_pct" ]; then
     context_info=" $(printf '\033[33m')[ctx:${used_int}%]$(printf '\033[0m')"
 fi
 
-# Build status line (Starship-style: dir + git + model + context)
-printf "$(printf '\033[36m')%s$(printf '\033[0m')%s%s%s" "$dir_display" "$git_info" "$model_info" "$context_info"
+# Add session id (always shown when available)
+session_info=""
+if [ -n "$session_id" ]; then
+    session_info=" $(printf '\033[90m')[${session_id}]$(printf '\033[0m')"
+fi
+
+# Build status line (Starship-style: dir + git + model + context + session)
+printf "$(printf '\033[36m')%s$(printf '\033[0m')%s%s%s%s" "$dir_display" "$git_info" "$model_info" "$context_info" "$session_info"
