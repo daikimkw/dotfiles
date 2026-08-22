@@ -51,7 +51,7 @@ This pattern appears across `dot_Brewfile.tmpl` (extra casks/CLIs), `dot_zshrc.t
 chezmoi runs these automatically during `apply`, ordered and gated by filename:
 
 - `run_once_install-homebrew.sh` — runs once per machine; bootstraps Homebrew.
-- `run_onchange_after_install-packages.sh.tmpl` — re-runs whenever its rendered content changes. It embeds `{{ include "dot_Brewfile.tmpl" | sha256sum }}`, so **editing the Brewfile changes the hash and retriggers `brew bundle`**. Also installs VSCode extensions into Cursor.
+- `run_onchange_after_install-packages.sh.tmpl` — re-runs whenever its rendered content changes. It embeds `{{ include "dot_Brewfile.tmpl" | sha256sum }}`, so **editing the Brewfile changes the hash and retriggers `brew bundle`**. It then force-reinstalls the Brewfile's `vscode "..."` entries through the `code` CLI, which is what actually upgrades already-installed extensions (`brew bundle` alone only installs missing ones).
 - `run_onchange_after_macos-defaults.sh.tmpl` — applies macOS `defaults write` settings.
 
 `run_once_` = execute a single time; `run_onchange_` = re-execute when content changes; `after_` = run after files are written.
