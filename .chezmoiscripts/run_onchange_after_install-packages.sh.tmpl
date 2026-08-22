@@ -12,11 +12,10 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 brew bundle --file="$HOME/.Brewfile"
 
-# brew bundle only installs missing extensions and never passes --force, so it
-# cannot upgrade one that is already present. Run the list through the code CLI
-# with --force to pull each extension up to its latest version.
+# brew bundle installs missing extensions but never upgrades existing ones, so
+# pull them all up to their latest versions afterwards. --update-extensions does
+# the whole set in a single process; looping --install-extension --force would
+# spawn one code process per extension for the same result.
 if command -v code &>/dev/null; then
-  grep '^vscode ' "$HOME/.Brewfile" | sed 's/vscode "\(.*\)"/\1/' | while read -r ext; do
-    code --install-extension "$ext" --force || true
-  done
+  code --update-extensions || true
 fi
