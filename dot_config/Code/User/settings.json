@@ -24,12 +24,11 @@
   "editor.accessibilitySupport": "off",
   "terminal.external.osxExec": "Ghostty.app",
   "terminal.integrated.allowChords": false,
-  "git.autofetch": true,
-  "typescript.tsserver.log": "off",
+  "git.autofetch": false,
+  "js/ts.tsserver.log": "off",
   "prisma.showPrismaDataPlatformNotification": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
   "playwright.reuseBrowser": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.easymotion": true,
   "vim.sneak": true,
   "vim.incsearch": true,
@@ -93,5 +92,6 @@
   "window.commandCenter": true,
   "workbench.settings.applyToAllProfiles": [
       
-  ]
+  ],
+  "claudeCode.preferredLocation": "panel"
 }
