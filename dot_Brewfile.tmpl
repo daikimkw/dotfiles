@@ -10,6 +10,7 @@ brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 
 {{ if and (eq .chezmoi.os "darwin") (eq .chezmoi.hostname "daikimkw-pc-1") -}}
+brew "asc"
 brew "awscli"
 brew "azure-cli"
 brew "libyaml"
@@ -25,6 +26,7 @@ cask "claude-code"
 
 {{ if and (eq .chezmoi.os "darwin") (eq .chezmoi.hostname "daikimkw-pc-1") -}}
 cask "1password"
+cask "android-platform-tools"
 cask "android-studio"
 cask "figma"
 cask "font-biz-udgothic"
