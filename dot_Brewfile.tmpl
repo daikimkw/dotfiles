@@ -22,7 +22,7 @@ brew "watchman"
 {{ end -}}
 
 cask "1password-cli"
-cask "claude-code"
+cask "claude-code@latest"
 
 {{ if and (eq .chezmoi.os "darwin") (eq .chezmoi.hostname "daikimkw-pc-1") -}}
 cask "1password"
