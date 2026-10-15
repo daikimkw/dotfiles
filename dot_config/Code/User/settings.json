@@ -144,6 +144,9 @@
   },
   // Constrain MEO content to a centered 800px column (width patched by run_after_patch-meo-content-width.sh)
   "markdownEditorOptimized.contentMaxWidth.visible": true,
+  // MEO auto-enables Vim mode when VSCodeVim is installed, and in Vim mode on macOS
+  // it drops Cmd-key shortcuts (Cmd+Z does nothing). Keep Vim out of Markdown.
+  "markdownEditorOptimized.vimMode.behavior": "disabled",
   // MEO theme based on https://qiita.com/evesquare/items/c2118ea8c82784da3f61
   "markdownEditorOptimized.theme": {
     "id": "custom-theme",
