@@ -93,5 +93,93 @@
   "workbench.settings.applyToAllProfiles": [
       
   ],
-  "claudeCode.preferredLocation": "panel"
+  "claudeCode.preferredLocation": "panel",
+  "meoEnhanced.editing.preferences": {
+
+    "input": {
+      "selectionToolbar": true,
+      "wrapSelection": true,
+      "pairMode": "smart",
+      "skipMode": "smart",
+      "deleteMode": "smart",
+      "lists": true,
+      "convertTables": true,
+      "pasteUrl": true,
+      "pasteHtml": true,
+      "documentSuggestions": true,
+      "slash": true,
+      "emoji": false
+    },
+    "shortcuts": {}
+  },
+  "workbench.editorAssociations": {
+    "*.md": "markdownEditorOptimized.editor",
+    "*.markdown": "markdownEditorOptimized.editor",
+    "*.mdx": "markdownEditorOptimized.editor",
+    "*.mdc": "markdownEditorOptimized.editor",
+    "git:/**/*.md": "default",
+    "git:/**/*.markdown": "default",
+    "git:/**/*.mdx": "default",
+    "git:/**/*.mdc": "default",
+    "git:**/*.md": "default",
+    "git:**/*.markdown": "default",
+    "git:**/*.mdx": "default",
+    "git:**/*.mdc": "default",
+    "chat-editing-text-model:/**/*.md": "default",
+    "chat-editing-text-model:/**/*.markdown": "default",
+    "chat-editing-text-model:/**/*.mdx": "default",
+    "chat-editing-text-model:/**/*.mdc": "default",
+    "chat-editing-text-model:**/*.md": "default",
+    "chat-editing-text-model:**/*.markdown": "default",
+    "chat-editing-text-model:**/*.mdx": "default",
+    "chat-editing-text-model:**/*.mdc": "default",
+    "chat-editing-snapshot-text-model:/**/*.md": "default",
+    "chat-editing-snapshot-text-model:/**/*.markdown": "default",
+    "chat-editing-snapshot-text-model:/**/*.mdx": "default",
+    "chat-editing-snapshot-text-model:/**/*.mdc": "default",
+    "chat-editing-snapshot-text-model:**/*.md": "default",
+    "chat-editing-snapshot-text-model:**/*.markdown": "default",
+    "chat-editing-snapshot-text-model:**/*.mdx": "default",
+    "chat-editing-snapshot-text-model:**/*.mdc": "default"
+  },
+  // MEO theme based on https://qiita.com/evesquare/items/c2118ea8c82784da3f61
+  "markdownEditorOptimized.theme": {
+    "id": "custom-theme",
+    "name": "Custom theme",
+    "backgroundColor": "var(--vscode-editor-background)",
+    "colors": {
+      "base01": "#D4D4D4",
+      "base02": "#D4D4D4",
+      "base03": "#373737",
+      "base04": "#569CD6",
+      "base05": "#529CCA",
+      "base06": "#4DAB9A",
+      "base07": "#E6E6E6",
+      "base08": "#FFA344",
+      "base09": "#529CCA"
+    },
+    "syntaxTokens": {},
+    "fonts": {
+      "liveFont": "",
+      "sourceFont": "",
+      "liveFontWeight": "",
+      "sourceFontWeight": "",
+      "liveFontSize": null,
+      "sourceFontSize": null,
+      "h1FontSize": 1.6,
+      "h2FontSize": 1.5,
+      "h3FontSize": 1.3,
+      "h4FontSize": 1.2,
+      "h5FontSize": 1.1,
+      "h6FontSize": 1,
+      "h1FontWeight": "600",
+      "h2FontWeight": "600",
+      "h3FontWeight": "600",
+      "h4FontWeight": "600",
+      "h5FontWeight": "600",
+      "h6FontWeight": "600",
+      "liveLineHeight": 1.5,
+      "sourceLineHeight": 1.5
+    }
+  }
 }
