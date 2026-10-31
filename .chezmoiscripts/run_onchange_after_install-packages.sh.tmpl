@@ -10,7 +10,10 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Brewfile hash: {{ include "dot_Brewfile.tmpl" | sha256sum }}
 
-brew bundle --file="$HOME/.Brewfile"
+# Install missing entries only. Upgrading outdated casks here made every apply
+# slow and prompted for sudo (casks with launchctl uninstall stanzas such as
+# 1password and intellij-idea). Run `brew upgrade` manually when wanted.
+brew bundle install --no-upgrade --file="$HOME/.Brewfile"
 
 # brew bundle installs missing extensions but never upgrades existing ones, so
 # pull them all up to their latest versions afterwards. --update-extensions does
