@@ -3,113 +3,48 @@
   <head><title>Web</title></head>
   <body>
     <outline text="Official" title="Official">
-      <outline type="rss" text="Angular Blog" title="Angular Blog" xmlUrl="https://blog.angular.dev/feed" htmlUrl="https://angular.dev/"/>
       <outline type="rss" text="Apollo GraphQL Blog" title="Apollo GraphQL Blog" xmlUrl="https://www.apollographql.com/blog/rss.xml" htmlUrl="https://www.apollographql.com/"/>
       <outline type="rss" text="Astro Blog" title="Astro Blog" xmlUrl="https://astro.build/rss.xml" htmlUrl="https://astro.build/"/>
-      <outline type="rss" text="Babel Blog" title="Babel Blog" xmlUrl="https://babeljs.io/blog/rss.xml" htmlUrl="https://babeljs.io/blog/"/>
       <outline type="rss" text="Biome Blog" title="Biome Blog" xmlUrl="https://biomejs.dev/blog/rss.xml" htmlUrl="https://biomejs.dev/"/>
       <outline type="rss" text="Chrome Developer Blog" title="Chrome Developer Blog" xmlUrl="https://developer.chrome.com/static/blog/feed.xml" htmlUrl="https://developer.chrome.com/blog"/>
       <outline type="rss" text="Chromium Blog" title="Chromium Blog" xmlUrl="https://blog.chromium.org/atom.xml" htmlUrl="https://blog.chromium.org"/>
       <outline type="rss" text="Deno Blog" title="Deno Blog" xmlUrl="https://deno.com/feed" htmlUrl="https://deno.com/"/>
-      <outline type="rss" text="Electron Blog" title="Electron Blog" xmlUrl="https://www.electronjs.org/blog/rss.xml" htmlUrl="https://www.electronjs.org/"/>
       <outline type="rss" text="ESLint Blog" title="ESLint Blog" xmlUrl="https://eslint.org/feed.xml" htmlUrl="https://eslint.org/"/>
       <outline type="rss" text="Expo Blog" title="Expo Blog" xmlUrl="https://expo.dev/blog/rss.xml" htmlUrl="https://expo.dev/blog"/>
-      <outline type="rss" text="Frontend Masters Blog" title="Frontend Masters Blog" xmlUrl="https://frontendmasters.com/blog/feed/" htmlUrl="https://frontendmasters.com/blog/"/>
-      <outline type="rss" text="HeroUI Blog" title="HeroUI Blog" xmlUrl="https://heroui.com/blog/rss.xml" htmlUrl="https://heroui.com/blog"/>
-      <outline type="rss" text="Lynx.js Blog" title="Lynx.js Blog" xmlUrl="https://lynxjs.org/rss/blog-rss.xml" htmlUrl="https://lynxjs.org/"/>
       <outline type="rss" text="MDN Blog" title="MDN Blog" xmlUrl="https://developer.mozilla.org/en-US/blog/rss.xml" htmlUrl="https://developer.mozilla.org/en-US/blog/"/>
-      <outline type="rss" text="MUI Blog" title="MUI Blog" xmlUrl="https://mui.com/feed/blog/rss.xml" htmlUrl="https://mui.com/"/>
       <outline type="rss" text="Next.js Blog" title="Next.js Blog" xmlUrl="https://nextjs.org/feed.xml" htmlUrl="https://nextjs.org/"/>
       <outline type="rss" text="Node.js Blog" title="Node.js Blog" xmlUrl="https://nodejs.org/en/feed/blog.xml" htmlUrl="https://nodejs.org/"/>
-      <outline type="rss" text="Nuxt Blog" title="Nuxt Blog" xmlUrl="https://nuxt.com/blog/rss.xml" htmlUrl="https://nuxt.com/"/>
       <outline type="rss" text="Oxc Blog" title="Oxc Blog" xmlUrl="https://oxc.rs/feeds/blog-en.rss" htmlUrl="https://oxc.rs/"/>
       <outline type="rss" text="Prettier Blog" title="Prettier Blog" xmlUrl="https://prettier.io/blog/rss.xml" htmlUrl="https://prettier.io/"/>
       <outline type="rss" text="Prisma Blog" title="Prisma Blog" xmlUrl="https://www.prisma.io/blog/rss.xml" htmlUrl="https://www.prisma.io/"/>
       <outline type="rss" text="React Blog" title="React Blog" xmlUrl="https://react.dev/rss.xml" htmlUrl="https://react.dev/"/>
       <outline type="rss" text="React Native Blog" title="React Native Blog" xmlUrl="https://reactnative.dev/blog/rss.xml" htmlUrl="https://reactnative.dev/"/>
-      <outline type="rss" text="Remix Blog" title="Remix Blog" xmlUrl="https://remix.run/blog/rss.xml" htmlUrl="https://remix.run/"/>
-      <outline type="rss" text="Rslib Blog" title="Rslib Blog" xmlUrl="https://rslib.rs/rss/blog-rss.xml" htmlUrl="https://rslib.rs/"/>
       <outline type="rss" text="Rspack Blog" title="Rspack Blog" xmlUrl="https://rspack.rs/rss/blog-rss.xml" htmlUrl="https://rspack.rs/"/>
       <outline type="rss" text="Sentry Blog" title="Sentry Blog" xmlUrl="https://blog.sentry.io/feed.xml" htmlUrl="https://blog.sentry.io/"/>
       <outline type="rss" text="SpiderMonkey Blog" title="SpiderMonkey Blog" xmlUrl="https://spidermonkey.dev/feed.xml" htmlUrl="https://spidermonkey.dev/"/>
-      <outline type="rss" text="StackBlitz Blog" title="StackBlitz Blog" xmlUrl="https://blog.stackblitz.com/rss.xml" htmlUrl="https://stackblitz.com/"/>
       <outline type="rss" text="Storybook Blog" title="Storybook Blog" xmlUrl="https://storybook.js.org/blog/rss/" htmlUrl="https://storybook.js.org/"/>
-      <outline type="rss" text="Svelte Blog" title="Svelte Blog" xmlUrl="https://svelte.dev/blog/rss.xml" htmlUrl="https://svelte.dev/"/>
       <outline type="rss" text="Tailwind CSS Blog" title="Tailwind CSS Blog" xmlUrl="https://tailwindcss.com/feeds/feed.xml" htmlUrl="https://tailwindcss.com/"/>
-      <outline type="rss" text="Tauri Blog" title="Tauri Blog" xmlUrl="https://v2.tauri.app/blog/rss.xml" htmlUrl="https://v2.tauri.app/blog/"/>
       <outline type="rss" text="Turborepo Blog" title="Turborepo Blog" xmlUrl="https://turborepo.com/feed.xml" htmlUrl="https://turborepo.com/"/>
       <outline type="rss" text="TypeScript Blog" title="TypeScript Blog" xmlUrl="https://devblogs.microsoft.com/typescript/feed/" htmlUrl="https://www.typescriptlang.org/"/>
       <outline type="rss" text="Vercel Blog" title="Vercel Blog" xmlUrl="https://vercel.com/atom" htmlUrl="https://vercel.com/"/>
       <outline type="rss" text="Vite Blog" title="Vite Blog" xmlUrl="https://vite.dev/blog.rss" htmlUrl="https://vite.dev/"/>
       <outline type="rss" text="VLT Blog" title="VLT Blog" xmlUrl="https://vlt.io/rss.xml" htmlUrl="https://vlt.io/blog"/>
       <outline type="rss" text="VoidZero Blog" title="VoidZero Blog" xmlUrl="https://voidzero.dev/feed.xml" htmlUrl="https://voidzero.dev/"/>
-      <outline type="rss" text="Vue.js Blog" title="Vue.js Blog" xmlUrl="https://blog.vuejs.org/feed.rss" htmlUrl="https://blog.vuejs.org/"/>
       <outline type="rss" text="web.dev" title="web.dev" xmlUrl="https://web.dev/static/blog/feed.xml" htmlUrl="https://web.dev/"/>
       <outline type="rss" text="WebKit Blog" title="WebKit Blog" xmlUrl="https://webkit.org/blog/feed/" htmlUrl="https://webkit.org/blog/"/>
-      <outline type="rss" text="Yarn Blog" title="Yarn Blog" xmlUrl="https://yarnpkg.com/blog/rss.xml" htmlUrl="https://yarnpkg.com/blog"/>
-    </outline>
-    <outline text="Community" title="Community">
-      <outline type="rss" text="Anthony Fu" title="Anthony Fu" xmlUrl="https://antfu.me/feed.xml" htmlUrl="https://antfu.me/"/>
-      <outline type="rss" text="Arcjet Blog" title="Arcjet Blog" xmlUrl="https://blog.arcjet.com/rss/" htmlUrl="https://blog.arcjet.com/"/>
-      <outline type="rss" text="Atriiy" title="Atriiy" xmlUrl="https://www.atriiy.dev/rss" htmlUrl="https://www.atriiy.dev/"/>
-      <outline type="rss" text="azukiazusa のテックブログ2" title="azukiazusa のテックブログ2" xmlUrl="https://azukiazusa.dev/rss.xml" htmlUrl="https://azukiazusa.dev/"/>
-      <outline type="rss" text="Builder.io Blog" title="Builder.io Blog" xmlUrl="https://www.builder.io/blog/feed.xml" htmlUrl="https://www.builder.io/blog/"/>
-      <outline type="rss" text="CSS-Tricks" title="CSS-Tricks" xmlUrl="https://css-tricks.com/feed/" htmlUrl="https://css-tricks.com/"/>
-      <outline type="rss" text="e18e Blog" title="e18e Blog" xmlUrl="https://e18e.dev/blog.rss" htmlUrl="https://e18e.dev/"/>
-      <outline type="rss" text="efcl" title="efcl" xmlUrl="https://efcl.info/feed/" htmlUrl="https://efcl.info/"/>
-      <outline type="rss" text="Jake Archibald" title="Jake Archibald" xmlUrl="https://jakearchibald.com/posts.rss" htmlUrl="https://jakearchibald.com/"/>
-      <outline type="rss" text="Joyee Cheung" title="Joyee Cheung" xmlUrl="https://joyeecheung.github.io/blog/atom.xml" htmlUrl="https://joyeecheung.github.io/blog/"/>
-      <outline type="rss" text="JSer.info" title="JSer.info" xmlUrl="https://jser.info/rss/" htmlUrl="https://jser.info/"/>
-      <outline type="rss" text="Jxck" title="Jxck" xmlUrl="https://blog.jxck.io/feeds/atom.xml" htmlUrl="https://blog.jxck.io/"/>
-      <outline type="rss" text="leaysgur&#x27;s Blog" title="leaysgur&#x27;s Blog" xmlUrl="https://leaysgur.github.io/posts/rss.xml" htmlUrl="https://leaysgur.github.io/"/>
-      <outline type="rss" text="LogRocket Dev" title="LogRocket Dev" xmlUrl="https://blog.logrocket.com/feed/" htmlUrl="https://blog.logrocket.com/dev/"/>
-      <outline type="rss" text="Mark Erikson&#x27;s Blog" title="Mark Erikson&#x27;s Blog" xmlUrl="https://blog.isquaredsoftware.com/index.xml" htmlUrl="https://blog.isquaredsoftware.com/"/>
-      <outline type="rss" text="mizdra.net" title="mizdra.net" xmlUrl="https://www.mizdra.net/rss" htmlUrl="https://www.mizdra.net"/>
-      <outline type="rss" text="NodeSource Blog" title="NodeSource Blog" xmlUrl="https://nodesource.com/blog/rss" htmlUrl="https://nodesource.com/blog"/>
-      <outline type="rss" text="Overreacted" title="Overreacted" xmlUrl="https://overreacted.io/rss.xml" htmlUrl="https://overreacted.io/"/>
-      <outline type="rss" text="Socket" title="Socket" xmlUrl="https://socket.dev/api/blog/feed.atom" htmlUrl="https://socket.dev/"/>
-      <outline type="rss" text="tinyclouds" title="tinyclouds" xmlUrl="https://tinyclouds.org/feed" htmlUrl="https://tinyclouds.org/"/>
-      <outline type="rss" text="TkDodo" title="TkDodo" xmlUrl="https://tkdodo.eu/blog/rss.xml" htmlUrl="https://tkdodo.eu/blog/"/>
-      <outline type="rss" text="Total TypeScript" title="Total TypeScript" xmlUrl="https://www.totaltypescript.com/rss.xml" htmlUrl="https://www.totaltypescript.com/"/>
-      <outline type="rss" text="Zenn akfm_sato" title="Zenn akfm_sato" xmlUrl="https://zenn.dev/akfm/feed" htmlUrl="https://zenn.dev/akfm"/>
-      <outline type="rss" text="Zenn Cybozu Frontend" title="Zenn Cybozu Frontend" xmlUrl="https://zenn.dev/p/cybozu_frontend/feed" htmlUrl="https://zenn.dev/p/cybozu_frontend"/>
-      <outline type="rss" text="Zenn mizchi" title="Zenn mizchi" xmlUrl="https://zenn.dev/mizchi/feed" htmlUrl="https://zenn.dev/mizchi"/>
-      <outline type="rss" text="Zenn uhyo" title="Zenn uhyo" xmlUrl="https://zenn.dev/uhyo/feed" htmlUrl="https://zenn.dev/uhyo"/>
     </outline>
     <outline text="Podcast" title="Podcast">
-      <outline type="rss" text="JavaScript Jabber" title="JavaScript Jabber" xmlUrl="https://www.spreaker.com/show/6102064/episodes/feed" htmlUrl="https://topenddevs.com/podcasts/javascript-jabber"/>
       <outline type="rss" text="mozaic.fm" title="mozaic.fm" xmlUrl="https://feed.mozaic.fm/" htmlUrl="https://mozaic.fm/"/>
-      <outline type="rss" text="Muddy Web" title="Muddy Web" xmlUrl="https://anchor.fm/s/c9c3bf44/podcast/rss" htmlUrl="https://anchor.fm/"/>
-      <outline type="rss" text="PodRocket" title="PodRocket" xmlUrl="https://podrocket.logrocket.com/rss" htmlUrl="https://podrocket.logrocket.com/"/>
-      <outline type="rss" text="Syntax.fm" title="Syntax.fm" xmlUrl="https://feed.syntax.fm/" htmlUrl="https://syntax.fm/"/>
       <outline type="rss" text="UIT INSIDE" title="UIT INSIDE" xmlUrl="https://uit-inside.linecorp.com/feed.atom" htmlUrl="https://uit-inside.linecorp.com/"/>
     </outline>
     <outline text="Release" title="Release">
-      <outline type="rss" text="angular/angular" title="angular/angular" xmlUrl="https://github.com/angular/angular/releases.atom" htmlUrl="https://github.com/angular/angular/releases"/>
-      <outline type="rss" text="biomejs/biome" title="biomejs/biome" xmlUrl="https://github.com/biomejs/biome/releases.atom" htmlUrl="https://github.com/biomejs/biome/releases"/>
-      <outline type="rss" text="eslint/eslint" title="eslint/eslint" xmlUrl="https://github.com/eslint/eslint/releases.atom" htmlUrl="https://github.com/eslint/eslint/releases"/>
-      <outline type="rss" text="expressjs/express" title="expressjs/express" xmlUrl="https://github.com/expressjs/express/releases.atom" htmlUrl="https://github.com/expressjs/express/releases"/>
-      <outline type="rss" text="facebook/react" title="facebook/react" xmlUrl="https://github.com/facebook/react/releases.atom" htmlUrl="https://github.com/facebook/react/releases"/>
+      <outline type="rss" text="drizzle-team/drizzle-orm" title="drizzle-team/drizzle-orm" xmlUrl="https://github.com/drizzle-team/drizzle-orm/releases.atom" htmlUrl="https://github.com/drizzle-team/drizzle-orm/releases"/>
       <outline type="rss" text="honojs/hono" title="honojs/hono" xmlUrl="https://github.com/honojs/hono/releases.atom" htmlUrl="https://github.com/honojs/hono/releases"/>
-      <outline type="rss" text="jestjs/jest" title="jestjs/jest" xmlUrl="https://github.com/jestjs/jest/releases.atom" htmlUrl="https://github.com/jestjs/jest/releases"/>
       <outline type="rss" text="microsoft/playwright" title="microsoft/playwright" xmlUrl="https://github.com/microsoft/playwright/releases.atom" htmlUrl="https://github.com/microsoft/playwright/releases"/>
-      <outline type="rss" text="microsoft/TypeScript" title="microsoft/TypeScript" xmlUrl="https://github.com/microsoft/TypeScript/releases.atom" htmlUrl="https://github.com/microsoft/TypeScript/releases"/>
-      <outline type="rss" text="nodejs/node" title="nodejs/node" xmlUrl="https://github.com/nodejs/node/releases.atom" htmlUrl="https://github.com/nodejs/node/releases"/>
       <outline type="rss" text="npm/cli" title="npm/cli" xmlUrl="https://github.com/npm/cli/releases.atom" htmlUrl="https://github.com/npm/cli/releases"/>
-      <outline type="rss" text="nuxt/nuxt" title="nuxt/nuxt" xmlUrl="https://github.com/nuxt/nuxt/releases.atom" htmlUrl="https://github.com/nuxt/nuxt/releases"/>
-      <outline type="rss" text="parcel-bundler/lightningcss" title="parcel-bundler/lightningcss" xmlUrl="https://github.com/parcel-bundler/lightningcss/releases.atom" htmlUrl="https://github.com/parcel-bundler/lightningcss/releases"/>
-      <outline type="rss" text="parcel-bundler/parcel" title="parcel-bundler/parcel" xmlUrl="https://github.com/parcel-bundler/parcel/releases.atom" htmlUrl="https://github.com/parcel-bundler/parcel/releases"/>
       <outline type="rss" text="pnpm/pnpm" title="pnpm/pnpm" xmlUrl="https://github.com/pnpm/pnpm/releases.atom" htmlUrl="https://github.com/pnpm/pnpm/releases"/>
-      <outline type="rss" text="prettier/prettier" title="prettier/prettier" xmlUrl="https://github.com/prettier/prettier/releases.atom" htmlUrl="https://github.com/prettier/prettier/releases"/>
-      <outline type="rss" text="prisma/prisma" title="prisma/prisma" xmlUrl="https://github.com/prisma/prisma/releases.atom" htmlUrl="https://github.com/prisma/prisma/releases"/>
-      <outline type="rss" text="react-hook-form/react-hook-form" title="react-hook-form/react-hook-form" xmlUrl="https://github.com/react-hook-form/react-hook-form/releases.atom" htmlUrl="https://github.com/react-hook-form/react-hook-form/releases"/>
-      <outline type="rss" text="rolldown/rolldown" title="rolldown/rolldown" xmlUrl="https://github.com/rolldown/rolldown/releases.atom" htmlUrl="https://github.com/rolldown/rolldown/releases"/>
-      <outline type="rss" text="tailwindlabs/tailwindcss" title="tailwindlabs/tailwindcss" xmlUrl="https://github.com/tailwindlabs/tailwindcss/releases.atom" htmlUrl="https://github.com/tailwindlabs/tailwindcss/releases"/>
-      <outline type="rss" text="vercel/next.js" title="vercel/next.js" xmlUrl="https://github.com/vercel/next.js/releases.atom" htmlUrl="https://github.com/vercel/next.js/releases"/>
-      <outline type="rss" text="vitejs/vite" title="vitejs/vite" xmlUrl="https://github.com/vitejs/vite/releases.atom" htmlUrl="https://github.com/vitejs/vite/releases"/>
+      <outline type="rss" text="yarnpkg/zpm" title="yarnpkg/zpm" xmlUrl="https://github.com/yarnpkg/zpm/releases.atom" htmlUrl="https://github.com/yarnpkg/zpm/releases"/>
       <outline type="rss" text="vitest-dev/vitest" title="vitest-dev/vitest" xmlUrl="https://github.com/vitest-dev/vitest/releases.atom" htmlUrl="https://github.com/vitest-dev/vitest/releases"/>
-      <outline type="rss" text="vuejs/core" title="vuejs/core" xmlUrl="https://github.com/vuejs/core/releases.atom" htmlUrl="https://github.com/vuejs/core/releases"/>
-      <outline type="rss" text="webpack/webpack" title="webpack/webpack" xmlUrl="https://github.com/webpack/webpack/releases.atom" htmlUrl="https://github.com/webpack/webpack/releases"/>
     </outline>
   </body>
 </opml>

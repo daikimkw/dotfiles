@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><title>Web Community</title></head>
+  <body>
+    <outline text="Community" title="Community">
+      <outline type="rss" text="Anthony Fu" title="Anthony Fu" xmlUrl="https://antfu.me/feed.xml" htmlUrl="https://antfu.me/"/>
+      <outline type="rss" text="Arcjet Blog" title="Arcjet Blog" xmlUrl="https://blog.arcjet.com/rss/" htmlUrl="https://blog.arcjet.com/"/>
+      <outline type="rss" text="Atriiy" title="Atriiy" xmlUrl="https://www.atriiy.dev/rss" htmlUrl="https://www.atriiy.dev/"/>
+      <outline type="rss" text="azukiazusa のテックブログ2" title="azukiazusa のテックブログ2" xmlUrl="https://azukiazusa.dev/rss.xml" htmlUrl="https://azukiazusa.dev/"/>
+      <outline type="rss" text="e18e Blog" title="e18e Blog" xmlUrl="https://e18e.dev/blog.rss" htmlUrl="https://e18e.dev/"/>
+      <outline type="rss" text="efcl" title="efcl" xmlUrl="https://efcl.info/feed/" htmlUrl="https://efcl.info/"/>
+      <outline type="rss" text="Jake Archibald" title="Jake Archibald" xmlUrl="https://jakearchibald.com/posts.rss" htmlUrl="https://jakearchibald.com/"/>
+      <outline type="rss" text="Joyee Cheung" title="Joyee Cheung" xmlUrl="https://joyeecheung.github.io/blog/atom.xml" htmlUrl="https://joyeecheung.github.io/blog/"/>
+      <outline type="rss" text="JSer.info" title="JSer.info" xmlUrl="https://jser.info/rss/" htmlUrl="https://jser.info/"/>
+      <outline type="rss" text="Jxck" title="Jxck" xmlUrl="https://blog.jxck.io/feeds/atom.xml" htmlUrl="https://blog.jxck.io/"/>
+      <outline type="rss" text="leaysgur&#x27;s Blog" title="leaysgur&#x27;s Blog" xmlUrl="https://leaysgur.github.io/posts/rss.xml" htmlUrl="https://leaysgur.github.io/"/>
+      <outline type="rss" text="Mark Erikson&#x27;s Blog" title="Mark Erikson&#x27;s Blog" xmlUrl="https://blog.isquaredsoftware.com/index.xml" htmlUrl="https://blog.isquaredsoftware.com/"/>
+      <outline type="rss" text="mizdra.net" title="mizdra.net" xmlUrl="https://www.mizdra.net/rss" htmlUrl="https://www.mizdra.net"/>
+      <outline type="rss" text="Overreacted" title="Overreacted" xmlUrl="https://overreacted.io/rss.xml" htmlUrl="https://overreacted.io/"/>
+      <outline type="rss" text="Socket" title="Socket" xmlUrl="https://socket.dev/api/blog/feed.atom" htmlUrl="https://socket.dev/"/>
+      <outline type="rss" text="tinyclouds" title="tinyclouds" xmlUrl="https://tinyclouds.org/feed" htmlUrl="https://tinyclouds.org/"/>
+      <outline type="rss" text="TkDodo" title="TkDodo" xmlUrl="https://tkdodo.eu/blog/rss.xml" htmlUrl="https://tkdodo.eu/blog/"/>
+      <outline type="rss" text="Total TypeScript" title="Total TypeScript" xmlUrl="https://www.totaltypescript.com/rss.xml" htmlUrl="https://www.totaltypescript.com/"/>
+      <outline type="rss" text="Zenn akfm_sato" title="Zenn akfm_sato" xmlUrl="https://zenn.dev/akfm/feed" htmlUrl="https://zenn.dev/akfm"/>
+      <outline type="rss" text="Zenn Cybozu Frontend" title="Zenn Cybozu Frontend" xmlUrl="https://zenn.dev/p/cybozu_frontend/feed" htmlUrl="https://zenn.dev/p/cybozu_frontend"/>
+      <outline type="rss" text="Zenn mizchi" title="Zenn mizchi" xmlUrl="https://zenn.dev/mizchi/feed" htmlUrl="https://zenn.dev/mizchi"/>
+      <outline type="rss" text="Zenn uhyo" title="Zenn uhyo" xmlUrl="https://zenn.dev/uhyo/feed" htmlUrl="https://zenn.dev/uhyo"/>
+      <outline type="rss" text="Publickey" title="Publickey" xmlUrl="https://www.publickey1.jp/atom.xml" htmlUrl="https://www.publickey1.jp/"/>
+      <outline type="rss" text="Cybozu Inside Out" title="Cybozu Inside Out" xmlUrl="https://blog.cybozu.io/feed" htmlUrl="https://blog.cybozu.io/"/>
+      <outline type="rss" text="LINEヤフー Tech Blog" title="LINEヤフー Tech Blog" xmlUrl="https://techblog.lycorp.co.jp/ja/feed/index.xml" htmlUrl="https://techblog.lycorp.co.jp/ja"/>
+    </outline>
+  </body>
+</opml>

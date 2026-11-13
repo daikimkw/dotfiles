@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><title>Security</title></head>
+  <body>
+    <outline text="Official" title="Official">
+      <outline type="rss" text="JPCERT/CC 注意喚起" title="JPCERT/CC 注意喚起" xmlUrl="https://www.jpcert.or.jp/rss/jpcert.rdf" htmlUrl="https://www.jpcert.or.jp/"/>
+      <outline type="rss" text="IPA 重要なセキュリティ情報" title="IPA 重要なセキュリティ情報" xmlUrl="https://www.ipa.go.jp/security/alert-rss.rdf" htmlUrl="https://www.ipa.go.jp/security/"/>
+      <outline type="rss" text="JPCERT/CC Eyes" title="JPCERT/CC Eyes" xmlUrl="https://blogs.jpcert.or.jp/ja/atom.xml" htmlUrl="https://blogs.jpcert.or.jp/ja/"/>
+      <outline type="rss" text="Google Project Zero" title="Google Project Zero" xmlUrl="https://googleprojectzero.blogspot.com/feeds/posts/default" htmlUrl="https://googleprojectzero.blogspot.com/"/>
+      <outline type="rss" text="Google Security Blog" title="Google Security Blog" xmlUrl="https://security.googleblog.com/feeds/posts/default" htmlUrl="https://security.googleblog.com/"/>
+      <outline type="rss" text="Google Cloud Identity &amp; Security" title="Google Cloud Identity &amp; Security" xmlUrl="https://cloudblog.withgoogle.com/products/identity-security/rss/" htmlUrl="https://cloud.google.com/blog/products/identity-security"/>
+      <outline type="rss" text="GitHub Blog Security" title="GitHub Blog Security" xmlUrl="https://github.blog/security/feed/" htmlUrl="https://github.blog/security/"/>
+      <outline type="rss" text="AWS Security Blog" title="AWS Security Blog" xmlUrl="https://aws.amazon.com/blogs/security/feed/" htmlUrl="https://aws.amazon.com/blogs/security/"/>
+      <outline type="rss" text="Microsoft Security Blog" title="Microsoft Security Blog" xmlUrl="https://www.microsoft.com/en-us/security/blog/feed/" htmlUrl="https://www.microsoft.com/en-us/security/blog/"/>
+      <outline type="rss" text="Mozilla Security Blog" title="Mozilla Security Blog" xmlUrl="https://blog.mozilla.org/security/feed/" htmlUrl="https://blog.mozilla.org/security/"/>
+      <outline type="rss" text="OpenSSF" title="OpenSSF" xmlUrl="https://openssf.org/feed/" htmlUrl="https://openssf.org/blog/"/>
+      <outline type="rss" text="CISA Advisories" title="CISA Advisories" xmlUrl="https://www.cisa.gov/cybersecurity-advisories/all.xml" htmlUrl="https://www.cisa.gov/news-events/cybersecurity-advisories"/>
+    </outline>
+    <outline text="Research" title="Research">
+      <outline type="rss" text="Trail of Bits" title="Trail of Bits" xmlUrl="https://blog.trailofbits.com/feed/" htmlUrl="https://blog.trailofbits.com/"/>
+      <outline type="rss" text="PortSwigger Research" title="PortSwigger Research" xmlUrl="https://portswigger.net/research/rss" htmlUrl="https://portswigger.net/research"/>
+      <outline type="rss" text="Wiz Blog" title="Wiz Blog" xmlUrl="https://www.wiz.io/feed/rss.xml" htmlUrl="https://www.wiz.io/blog"/>
+      <outline type="rss" text="Datadog Security Labs" title="Datadog Security Labs" xmlUrl="https://securitylabs.datadoghq.com/rss/feed.xml" htmlUrl="https://securitylabs.datadoghq.com/"/>
+      <outline type="rss" text="Embrace The Red" title="Embrace The Red" xmlUrl="https://embracethered.com/blog/index.xml" htmlUrl="https://embracethered.com/blog/"/>
+      <outline type="rss" text="OWASP GenAI Security Project" title="OWASP GenAI Security Project" xmlUrl="https://genai.owasp.org/feed/" htmlUrl="https://genai.owasp.org/"/>
+      <outline type="rss" text="Flatt Security Blog" title="Flatt Security Blog" xmlUrl="https://blog.flatt.tech/feed" htmlUrl="https://blog.flatt.tech/"/>
+      <outline type="rss" text="LAC WATCH" title="LAC WATCH" xmlUrl="https://www.lac.co.jp/lacwatch/feed.xml" htmlUrl="https://www.lac.co.jp/lacwatch/"/>
+      <outline type="rss" text="NRI セキュア ブログ" title="NRI セキュア ブログ" xmlUrl="https://www.nri-secure.co.jp/blog/rss.xml" htmlUrl="https://www.nri-secure.co.jp/blog"/>
+    </outline>
+    <outline text="Community" title="Community">
+      <outline type="rss" text="DevelopersIO セキュリティ" title="DevelopersIO セキュリティ" xmlUrl="https://dev.classmethod.jp/tags/security/feed/" htmlUrl="https://dev.classmethod.jp/tags/security/"/>
+      <outline type="rss" text="piyolog" title="piyolog" xmlUrl="https://piyolog.hatenadiary.jp/feed" htmlUrl="https://piyolog.hatenadiary.jp/"/>
+      <outline type="rss" text="Krebs on Security" title="Krebs on Security" xmlUrl="https://krebsonsecurity.com/feed/" htmlUrl="https://krebsonsecurity.com/"/>
+      <outline type="rss" text="tl;dr sec" title="tl;dr sec" xmlUrl="https://tldrsec.com/feed.xml" htmlUrl="https://tldrsec.com/"/>
+    </outline>
+  </body>
+</opml>
