@@ -28,7 +28,6 @@
       <outline type="rss" text="TypeScript Blog" title="TypeScript Blog" xmlUrl="https://devblogs.microsoft.com/typescript/feed/" htmlUrl="https://www.typescriptlang.org/"/>
       <outline type="rss" text="Vercel Blog" title="Vercel Blog" xmlUrl="https://vercel.com/atom" htmlUrl="https://vercel.com/"/>
       <outline type="rss" text="Vite Blog" title="Vite Blog" xmlUrl="https://vite.dev/blog.rss" htmlUrl="https://vite.dev/"/>
-      <outline type="rss" text="VLT Blog" title="VLT Blog" xmlUrl="https://vlt.io/rss.xml" htmlUrl="https://vlt.io/blog"/>
       <outline type="rss" text="VoidZero Blog" title="VoidZero Blog" xmlUrl="https://voidzero.dev/feed.xml" htmlUrl="https://voidzero.dev/"/>
       <outline type="rss" text="web.dev" title="web.dev" xmlUrl="https://web.dev/static/blog/feed.xml" htmlUrl="https://web.dev/"/>
       <outline type="rss" text="WebKit Blog" title="WebKit Blog" xmlUrl="https://webkit.org/blog/feed/" htmlUrl="https://webkit.org/blog/"/>
