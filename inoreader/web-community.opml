@@ -17,6 +17,7 @@
       <outline type="rss" text="Mark Erikson&#x27;s Blog" title="Mark Erikson&#x27;s Blog" xmlUrl="https://blog.isquaredsoftware.com/index.xml" htmlUrl="https://blog.isquaredsoftware.com/"/>
       <outline type="rss" text="mizdra.net" title="mizdra.net" xmlUrl="https://www.mizdra.net/rss" htmlUrl="https://www.mizdra.net"/>
       <outline type="rss" text="Overreacted" title="Overreacted" xmlUrl="https://overreacted.io/rss.xml" htmlUrl="https://overreacted.io/"/>
+      <outline type="rss" text="sakupi01 blog" title="sakupi01 blog" xmlUrl="https://blog.sakupi01.com/feed.xml" htmlUrl="https://blog.sakupi01.com/"/>
       <outline type="rss" text="Socket" title="Socket" xmlUrl="https://socket.dev/api/blog/feed.atom" htmlUrl="https://socket.dev/"/>
       <outline type="rss" text="tinyclouds" title="tinyclouds" xmlUrl="https://tinyclouds.org/feed" htmlUrl="https://tinyclouds.org/"/>
       <outline type="rss" text="TkDodo" title="TkDodo" xmlUrl="https://tkdodo.eu/blog/rss.xml" htmlUrl="https://tkdodo.eu/blog/"/>
