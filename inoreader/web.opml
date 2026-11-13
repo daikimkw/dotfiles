@@ -13,9 +13,9 @@
       <outline type="rss" text="Deno Blog" title="Deno Blog" xmlUrl="https://deno.com/feed" htmlUrl="https://deno.com/"/>
       <outline type="rss" text="Electron Blog" title="Electron Blog" xmlUrl="https://www.electronjs.org/blog/rss.xml" htmlUrl="https://www.electronjs.org/"/>
       <outline type="rss" text="ESLint Blog" title="ESLint Blog" xmlUrl="https://eslint.org/feed.xml" htmlUrl="https://eslint.org/"/>
-      <outline type="rss" text="Expo Blog" title="Expo Blog" xmlUrl="https://blog.expo.dev/feed" htmlUrl="https://expo.dev/blog"/>
+      <outline type="rss" text="Expo Blog" title="Expo Blog" xmlUrl="https://expo.dev/blog/rss.xml" htmlUrl="https://expo.dev/blog"/>
       <outline type="rss" text="Frontend Masters Blog" title="Frontend Masters Blog" xmlUrl="https://frontendmasters.com/blog/feed/" htmlUrl="https://frontendmasters.com/blog/"/>
-      <outline type="rss" text="HeroUI Blog" title="HeroUI Blog" xmlUrl="https://www.heroui.com/feed.xml" htmlUrl="https://www.heroui.com/"/>
+      <outline type="rss" text="HeroUI Blog" title="HeroUI Blog" xmlUrl="https://heroui.com/blog/rss.xml" htmlUrl="https://heroui.com/blog"/>
       <outline type="rss" text="Lynx.js Blog" title="Lynx.js Blog" xmlUrl="https://lynxjs.org/rss/blog-rss.xml" htmlUrl="https://lynxjs.org/"/>
       <outline type="rss" text="MDN Blog" title="MDN Blog" xmlUrl="https://developer.mozilla.org/en-US/blog/rss.xml" htmlUrl="https://developer.mozilla.org/en-US/blog/"/>
       <outline type="rss" text="MUI Blog" title="MUI Blog" xmlUrl="https://mui.com/feed/blog/rss.xml" htmlUrl="https://mui.com/"/>
@@ -41,7 +41,7 @@
       <outline type="rss" text="TypeScript Blog" title="TypeScript Blog" xmlUrl="https://devblogs.microsoft.com/typescript/feed/" htmlUrl="https://www.typescriptlang.org/"/>
       <outline type="rss" text="Vercel Blog" title="Vercel Blog" xmlUrl="https://vercel.com/atom" htmlUrl="https://vercel.com/"/>
       <outline type="rss" text="Vite Blog" title="Vite Blog" xmlUrl="https://vite.dev/blog.rss" htmlUrl="https://vite.dev/"/>
-      <outline type="rss" text="VLT Blog" title="VLT Blog" xmlUrl="https://blog.vlt.sh/feed.xml" htmlUrl="https://blog.vlt.sh/"/>
+      <outline type="rss" text="VLT Blog" title="VLT Blog" xmlUrl="https://vlt.io/rss.xml" htmlUrl="https://vlt.io/blog"/>
       <outline type="rss" text="VoidZero Blog" title="VoidZero Blog" xmlUrl="https://voidzero.dev/feed.xml" htmlUrl="https://voidzero.dev/"/>
       <outline type="rss" text="Vue.js Blog" title="Vue.js Blog" xmlUrl="https://blog.vuejs.org/feed.rss" htmlUrl="https://blog.vuejs.org/"/>
       <outline type="rss" text="web.dev" title="web.dev" xmlUrl="https://web.dev/static/blog/feed.xml" htmlUrl="https://web.dev/"/>
@@ -49,7 +49,6 @@
       <outline type="rss" text="Yarn Blog" title="Yarn Blog" xmlUrl="https://yarnpkg.com/blog/rss.xml" htmlUrl="https://yarnpkg.com/blog"/>
     </outline>
     <outline text="Community" title="Community">
-      <outline type="rss" text="2ality" title="2ality" xmlUrl="https://2ality.com/feeds/posts.atom" htmlUrl="https://2ality.com/"/>
       <outline type="rss" text="Anthony Fu" title="Anthony Fu" xmlUrl="https://antfu.me/feed.xml" htmlUrl="https://antfu.me/"/>
       <outline type="rss" text="Arcjet Blog" title="Arcjet Blog" xmlUrl="https://blog.arcjet.com/rss/" htmlUrl="https://blog.arcjet.com/"/>
       <outline type="rss" text="Atriiy" title="Atriiy" xmlUrl="https://www.atriiy.dev/rss" htmlUrl="https://www.atriiy.dev/"/>
@@ -79,7 +78,6 @@
     </outline>
     <outline text="Podcast" title="Podcast">
       <outline type="rss" text="JavaScript Jabber" title="JavaScript Jabber" xmlUrl="https://www.spreaker.com/show/6102064/episodes/feed" htmlUrl="https://topenddevs.com/podcasts/javascript-jabber"/>
-      <outline type="rss" text="JS Party" title="JS Party" xmlUrl="https://changelog.com/jsparty/feed" htmlUrl="https://changelog.com/jsparty"/>
       <outline type="rss" text="mozaic.fm" title="mozaic.fm" xmlUrl="https://feed.mozaic.fm/" htmlUrl="https://mozaic.fm/"/>
       <outline type="rss" text="Muddy Web" title="Muddy Web" xmlUrl="https://anchor.fm/s/c9c3bf44/podcast/rss" htmlUrl="https://anchor.fm/"/>
       <outline type="rss" text="PodRocket" title="PodRocket" xmlUrl="https://podrocket.logrocket.com/rss" htmlUrl="https://podrocket.logrocket.com/"/>

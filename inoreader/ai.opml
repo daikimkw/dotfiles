@@ -8,14 +8,13 @@
       <outline type="rss" text="Google DeepMind Blog" title="Google DeepMind Blog" xmlUrl="https://deepmind.google/blog/rss.xml" htmlUrl="https://deepmind.google/discover/blog/"/>
       <outline type="rss" text="Google Research Blog" title="Google Research Blog" xmlUrl="https://research.google/blog/rss/" htmlUrl="https://research.google/blog/"/>
       <outline type="rss" text="Hugging Face Blog" title="Hugging Face Blog" xmlUrl="https://huggingface.co/blog/feed.xml" htmlUrl="https://huggingface.co/blog"/>
-      <outline type="rss" text="Microsoft AI Blog" title="Microsoft AI Blog" xmlUrl="https://blogs.microsoft.com/ai/feed/" htmlUrl="https://blogs.microsoft.com/ai/"/>
+      <outline type="rss" text="Microsoft Source - AI" title="Microsoft Source - AI" xmlUrl="https://news.microsoft.com/source/topics/ai/feed/" htmlUrl="https://news.microsoft.com/source/topics/ai/"/>
       <outline type="rss" text="OpenAI News" title="OpenAI News" xmlUrl="https://openai.com/news/rss.xml" htmlUrl="https://openai.com/news/"/>
       <outline type="rss" text="VS Code Blog" title="VS Code Blog" xmlUrl="https://code.visualstudio.com/feed.xml" htmlUrl="https://code.visualstudio.com/blogs"/>
     </outline>
     <outline text="Community" title="Community">
       <outline type="rss" text="Andrej Karpathy (blog)" title="Andrej Karpathy (blog)" xmlUrl="https://karpathy.bearblog.dev/feed/" htmlUrl="https://karpathy.bearblog.dev/"/>
       <outline type="rss" text="Chip Huyen" title="Chip Huyen" xmlUrl="https://huyenchip.com/feed.xml" htmlUrl="https://huyenchip.com/"/>
-      <outline type="rss" text="LMSYS Blog" title="LMSYS Blog" xmlUrl="https://lmsys.org/rss.xml" htmlUrl="https://lmsys.org/blog/"/>
       <outline type="rss" text="Simon Willison" title="Simon Willison" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/"/>
       <outline type="rss" text="Zenn schroneko" title="Zenn schroneko" xmlUrl="https://zenn.dev/schroneko/feed" htmlUrl="https://zenn.dev/schroneko"/>
     </outline>
@@ -24,7 +23,6 @@
       <outline type="rss" text="browserbase/stagehand" title="browserbase/stagehand" xmlUrl="https://github.com/browserbase/stagehand/releases.atom" htmlUrl="https://github.com/browserbase/stagehand/releases"/>
       <outline type="rss" text="chroma-core/chroma" title="chroma-core/chroma" xmlUrl="https://github.com/chroma-core/chroma/releases.atom" htmlUrl="https://github.com/chroma-core/chroma/releases"/>
       <outline type="rss" text="facebookresearch/faiss" title="facebookresearch/faiss" xmlUrl="https://github.com/facebookresearch/faiss/releases.atom" htmlUrl="https://github.com/facebookresearch/faiss/releases"/>
-      <outline type="rss" text="facebookresearch/llama" title="facebookresearch/llama" xmlUrl="https://github.com/facebookresearch/llama/releases.atom" htmlUrl="https://github.com/facebookresearch/llama/releases"/>
       <outline type="rss" text="huggingface/transformers" title="huggingface/transformers" xmlUrl="https://github.com/huggingface/transformers/releases.atom" htmlUrl="https://github.com/huggingface/transformers/releases"/>
       <outline type="rss" text="langchain-ai/langchain" title="langchain-ai/langchain" xmlUrl="https://github.com/langchain-ai/langchain/releases.atom" htmlUrl="https://github.com/langchain-ai/langchain/releases"/>
       <outline type="rss" text="langchain-ai/langgraph" title="langchain-ai/langgraph" xmlUrl="https://github.com/langchain-ai/langgraph/releases.atom" htmlUrl="https://github.com/langchain-ai/langgraph/releases"/>
