@@ -75,7 +75,15 @@ VSCode settings live in `dot_config/Code/User/` (the XDG-style path). On macOS, 
 
 ## Inoreader feeds
 
-`inoreader/*.opml` hold RSS subscriptions. They are not applied to `$HOME` (listed in `.chezmoiignore`); Inoreader's "OPML Subscription" reads them from `https://raw.githubusercontent.com/daikimkw/dotfiles/main/inoreader/<name>.opml`, so editing and pushing is enough to update Inoreader.
+`inoreader/*.opml` hold RSS subscriptions. They are not applied to `$HOME` (listed in `.chezmoiignore`); Inoreader's "OPML Subscription" reads them from `https://raw.githubusercontent.com/daikimkw/dotfiles/main/inoreader/<name>.opml` (one subscription per file, each with its own folder: `ai`→AI, `security`→Security, `web`→Web, `web-community`→Web Community).
+
+Inoreader gotchas:
+
+- Sync runs once a day; use the per-row refresh button on `inoreader.com/opml_subscriptions` to apply a push immediately.
+- Additions sync automatically, but removals do not, even with "full sync". After deleting a feed from an OPML, also unsubscribe it in Preferences → Content → Feeds.
+- The free plan caps subscriptions at 150, and each sync is rejected if `current subscriptions + feeds in that file > 150` (duplicates are not subtracted). Keep `total + largest file <= 150`; split a file when it grows instead of letting it fail.
+- Never point two full-sync OPML subscriptions at the same folder; give each file its own folder.
+- Before adding a feed, confirm it with `curl -sL --compressed` (some servers always gzip). Feeds behind bot protection (e.g. Vercel's security check) may fail in Inoreader too.
 
 ## Conventions
 
