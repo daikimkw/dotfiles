@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><title>AI</title></head>
+  <body>
+    <outline text="Official" title="Official">
+      <outline type="rss" text="AWS Machine Learning Blog" title="AWS Machine Learning Blog" xmlUrl="https://aws.amazon.com/blogs/machine-learning/feed/" htmlUrl="https://aws.amazon.com/blogs/machine-learning/"/>
+      <outline type="rss" text="Google AI (The Keyword)" title="Google AI (The Keyword)" xmlUrl="https://blog.google/technology/ai/rss/" htmlUrl="https://blog.google/technology/ai/"/>
+      <outline type="rss" text="Google DeepMind Blog" title="Google DeepMind Blog" xmlUrl="https://deepmind.google/blog/rss.xml" htmlUrl="https://deepmind.google/discover/blog/"/>
+      <outline type="rss" text="Google Research Blog" title="Google Research Blog" xmlUrl="https://research.google/blog/rss/" htmlUrl="https://research.google/blog/"/>
+      <outline type="rss" text="Hugging Face Blog" title="Hugging Face Blog" xmlUrl="https://huggingface.co/blog/feed.xml" htmlUrl="https://huggingface.co/blog"/>
+      <outline type="rss" text="Microsoft AI Blog" title="Microsoft AI Blog" xmlUrl="https://blogs.microsoft.com/ai/feed/" htmlUrl="https://blogs.microsoft.com/ai/"/>
+      <outline type="rss" text="OpenAI News" title="OpenAI News" xmlUrl="https://openai.com/news/rss.xml" htmlUrl="https://openai.com/news/"/>
+      <outline type="rss" text="VS Code Blog" title="VS Code Blog" xmlUrl="https://code.visualstudio.com/feed.xml" htmlUrl="https://code.visualstudio.com/blogs"/>
+    </outline>
+    <outline text="Community" title="Community">
+      <outline type="rss" text="Andrej Karpathy (blog)" title="Andrej Karpathy (blog)" xmlUrl="https://karpathy.bearblog.dev/feed/" htmlUrl="https://karpathy.bearblog.dev/"/>
+      <outline type="rss" text="Chip Huyen" title="Chip Huyen" xmlUrl="https://huyenchip.com/feed.xml" htmlUrl="https://huyenchip.com/"/>
+      <outline type="rss" text="LMSYS Blog" title="LMSYS Blog" xmlUrl="https://lmsys.org/rss.xml" htmlUrl="https://lmsys.org/blog/"/>
+      <outline type="rss" text="Simon Willison" title="Simon Willison" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/"/>
+      <outline type="rss" text="Zenn schroneko" title="Zenn schroneko" xmlUrl="https://zenn.dev/schroneko/feed" htmlUrl="https://zenn.dev/schroneko"/>
+    </outline>
+    <outline text="Release" title="Release">
+      <outline type="rss" text="All-Hands-AI/OpenHands" title="All-Hands-AI/OpenHands" xmlUrl="https://github.com/All-Hands-AI/OpenHands/releases.atom" htmlUrl="https://github.com/All-Hands-AI/OpenHands/releases"/>
+      <outline type="rss" text="browserbase/stagehand" title="browserbase/stagehand" xmlUrl="https://github.com/browserbase/stagehand/releases.atom" htmlUrl="https://github.com/browserbase/stagehand/releases"/>
+      <outline type="rss" text="chroma-core/chroma" title="chroma-core/chroma" xmlUrl="https://github.com/chroma-core/chroma/releases.atom" htmlUrl="https://github.com/chroma-core/chroma/releases"/>
+      <outline type="rss" text="facebookresearch/faiss" title="facebookresearch/faiss" xmlUrl="https://github.com/facebookresearch/faiss/releases.atom" htmlUrl="https://github.com/facebookresearch/faiss/releases"/>
+      <outline type="rss" text="facebookresearch/llama" title="facebookresearch/llama" xmlUrl="https://github.com/facebookresearch/llama/releases.atom" htmlUrl="https://github.com/facebookresearch/llama/releases"/>
+      <outline type="rss" text="huggingface/transformers" title="huggingface/transformers" xmlUrl="https://github.com/huggingface/transformers/releases.atom" htmlUrl="https://github.com/huggingface/transformers/releases"/>
+      <outline type="rss" text="langchain-ai/langchain" title="langchain-ai/langchain" xmlUrl="https://github.com/langchain-ai/langchain/releases.atom" htmlUrl="https://github.com/langchain-ai/langchain/releases"/>
+      <outline type="rss" text="langchain-ai/langgraph" title="langchain-ai/langgraph" xmlUrl="https://github.com/langchain-ai/langgraph/releases.atom" htmlUrl="https://github.com/langchain-ai/langgraph/releases"/>
+      <outline type="rss" text="mastra-ai/mastra" title="mastra-ai/mastra" xmlUrl="https://github.com/mastra-ai/mastra/releases.atom" htmlUrl="https://github.com/mastra-ai/mastra/releases"/>
+      <outline type="rss" text="microsoft/DeepSpeed" title="microsoft/DeepSpeed" xmlUrl="https://github.com/microsoft/DeepSpeed/releases.atom" htmlUrl="https://github.com/microsoft/DeepSpeed/releases"/>
+      <outline type="rss" text="RooCodeInc/Roo-Code" title="RooCodeInc/Roo-Code" xmlUrl="https://github.com/RooCodeInc/Roo-Code/releases.atom" htmlUrl="https://github.com/RooCodeInc/Roo-Code/releases"/>
+    </outline>
+  </body>
+</opml>

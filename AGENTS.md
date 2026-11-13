@@ -73,6 +73,10 @@ Add `--greedy` to also upgrade self-updating casks (Chrome, Edge, etc.).
 
 VSCode settings live in `dot_config/Code/User/` (the XDG-style path). On macOS, the `private_Library/.../Code/User/symlink_*.json.tmpl` files symlink the actual macOS app path (`~/Library/Application Support/Code/User/`) back to `~/.config/Code/User/`, keeping a single canonical copy. Edit the files under `dot_config/Code/User/`.
 
+## Inoreader feeds
+
+`inoreader/*.opml` hold RSS subscriptions. They are not applied to `$HOME` (listed in `.chezmoiignore`); Inoreader's "OPML Subscription" reads them from `https://raw.githubusercontent.com/daikimkw/dotfiles/main/inoreader/<name>.opml`, so editing and pushing is enough to update Inoreader.
+
 ## Conventions
 
 - Write code/config comments in English (see repo memory). User-facing chat is Japanese.
