@@ -51,14 +51,23 @@ This pattern appears across `dot_Brewfile.tmpl` (extra casks/CLIs), `dot_zshrc.t
 chezmoi runs these automatically during `apply`, ordered and gated by filename:
 
 - `run_once_install-homebrew.sh` — runs once per machine; bootstraps Homebrew.
-- `run_onchange_after_install-packages.sh.tmpl` — re-runs whenever its rendered content changes. It embeds `{{ include "dot_Brewfile.tmpl" | sha256sum }}`, so **editing the Brewfile changes the hash and retriggers `brew bundle`**. It then force-reinstalls the Brewfile's `vscode "..."` entries through the `code` CLI, which is what actually upgrades already-installed extensions (`brew bundle` alone only installs missing ones).
+- `run_onchange_after_install-packages.sh.tmpl` — re-runs whenever its rendered content changes. It embeds `{{ include "dot_Brewfile.tmpl" | sha256sum }}`, so **editing the Brewfile changes the hash and retriggers `brew bundle install --no-upgrade`**, which installs missing entries only and never upgrades outdated formulae/casks (upgrading on apply was slow and prompted for sudo). It then runs `code --update-extensions`, which is what actually upgrades already-installed VSCode extensions (`brew bundle` alone only installs missing ones).
 - `run_onchange_after_macos-defaults.sh.tmpl` — applies macOS `defaults write` settings.
 
 `run_once_` = execute a single time; `run_onchange_` = re-execute when content changes; `after_` = run after files are written.
 
 ## Package management
 
-`dot_Brewfile.tmpl` → `~/.Brewfile` is the single source of truth for Homebrew formulae, casks, and VSCode extensions (`vscode "..."` lines). To add a tool, edit this file; `chezmoi apply` will detect the hash change and run `brew bundle`.
+`dot_Brewfile.tmpl` → `~/.Brewfile` is the single source of truth for Homebrew formulae, casks, and VSCode extensions (`vscode "..."` lines). To add a tool, edit this file; `chezmoi apply` will detect the hash change and run `brew bundle` (install-only).
+
+To upgrade everything manually (what apply used to do before upgrades were disabled):
+
+```sh
+brew bundle --global          # install missing + upgrade outdated Brewfile entries
+code --update-extensions      # VSCode extensions (also done on every apply)
+```
+
+Add `--greedy` to also upgrade self-updating casks (Chrome, Edge, etc.).
 
 ## VSCode config duplication
 
