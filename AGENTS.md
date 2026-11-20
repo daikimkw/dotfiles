@@ -60,14 +60,18 @@ chezmoi runs these automatically during `apply`, ordered and gated by filename:
 
 `dot_Brewfile.tmpl` → `~/.Brewfile` is the single source of truth for Homebrew formulae, casks, and VSCode extensions (`vscode "..."` lines). To add a tool, edit this file; `chezmoi apply` will detect the hash change and run `brew bundle` (install-only).
 
-To upgrade everything manually (what apply used to do before upgrades were disabled):
+To upgrade everything manually (apply never upgrades):
 
 ```sh
-brew bundle --global          # install missing + upgrade outdated Brewfile entries
-code --update-extensions      # VSCode extensions (also done on every apply)
+brew bundle --global          # install anything in ~/.Brewfile that is missing
+brew upgrade --greedy         # upgrade all installed formulae + casks, incl. self-updating ones (Edge, Office, Slack...)
+code --update-extensions      # upgrade VSCode extensions (also done on every apply)
 ```
 
-Add `--greedy` to also upgrade self-updating casks (Chrome, Edge, etc.).
+- `brew bundle` has no `--greedy` flag and skips self-updating casks; use `brew upgrade --greedy` for those.
+- `brew upgrade` covers everything installed (even entries missing from the Brewfile); `brew bundle` only touches Brewfile entries.
+- Some cask upgrades (1password, microsoft-office, ...) prompt for sudo.
+- Keep the Brewfile in sync: after a manual `brew install`, add the entry here. Check drift with `brew leaves --installed-on-request` / `brew list --cask` / `code --list-extensions` against the rendered Brewfile.
 
 ## VSCode config duplication
 
